@@ -1,0 +1,402 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.0em;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+a,
+ins {
+    text-decoration: none;
+}
+
+/* ^^^ Обнуление стилей ^^^ */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    width: 1170px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 84px;
+    align-items: center;
+}
+
+.navbar__item {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar__item--active {
+    color: #f01649;
+}
+
+.navbar__phone {
+    padding-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__item {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    width: 23%;
+}
+
+.about__icon {
+    height: 50px;
+    width: 50px;
+}
+
+.about__text {
+    width: 65%;
+}
+
+.about__button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #f01649;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.about__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__img {
+    width: 634px;
+}
+
+.about__title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 120px;
+    line-height: 125px;
+}
+
+.about__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+
+.food-category {
+    display: flex;
+    flex-direction: column;
+}
+
+.food-category__title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 42px;
+}
+
+.food-category__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.food-category__title--active {
+    color: #f01649;
+}
+
+.food-category__subtitle--active {
+    color: #f01649;
+}
+
+.food-category__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.food-item__img {
+    width: 100%;
+    height: 330px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.food-item__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.food-item__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.food-item__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.food-item__price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.food-item__quantity {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.food-item__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food-item__cart-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #f01649;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.food-item__about-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.spacer {
+    width: 100%;
+    height: 20px;
+}
+
+.big-spacer {
+    width: 100%;
+    height: 60px;
+}
+
+.subscription {
+    width: 100%;
+    text-align: center;
+}
+
+.subscription__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+
+.subscription__title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 120px;
+}
+
+.subscription__footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subscription__form {
+    background-color: #f0164931;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.subscription__button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #f01649;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.about-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-delivery__faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.about-delivery__title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 42px;
+}
+
+.about-delivery__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.about-delivery__article {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.about-delivery__img {
+    background-image: url('images/about-delivery.jpg');
+    height: 651px;
+    width: 528px;
+}
+
+.strong {
+    color: #f01649;
+    font-weight: 600;
+}
+
+.footer {
+    width: 100%;
+    height: 168px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__column {
+    width: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.footer__contact {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
